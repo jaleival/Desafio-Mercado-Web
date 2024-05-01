@@ -1,0 +1,18 @@
+{{#each products}}
+  <div class="card mx-3 my-3" style="width: 18rem;">
+    <img
+      src="../assets/img/{{this}}.png"
+      alt="{{this}}.png"
+      class="card-img-top img-fluid"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{this}}</h5>
+      <p class="card-text">Lleve su {{this}}.</p>
+      <a
+        href="#"
+        class="btn btn-primary agregarProducto"
+        data-name="{{this}}"
+      >Añadir al carro</a>
+    </div>
+  </div>
+{{/each}}

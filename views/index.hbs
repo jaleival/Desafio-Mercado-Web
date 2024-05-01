@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Web</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    {{> menu }}
+    <div class="container">
+        <div class="row">
+            <div class="col d-block text-center">
+                <h1>Bienvenido al Mercado Web</h1>
+                <h5>Seleccione sus productos</h5>
+                <h6>Total de productos seleccionados: <span class="counterParagraph">0</span></h6>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex">
+                {{> producto }}
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="test"></p>
+            <div class="col text-center"><button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#carrito-modal">Ver carro</button></div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/js/app.js" defer></script>
+    {{> modalPopUp }}
+</body>
+</html>
